@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(13, 31%, 94%);
+}
+
+@font-face {
+    font-family: "red-hat variable";
+    src: url("./assets/fonts/RedHatText-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "red-hat italic";
+    src: url("./assets/fonts/RedHatText-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "red-hat bold";
+    src: url("./assets/fonts/static/RedHatText-Bold.ttf");
+}
+
+@font-face {
+    font-family: "red-hat regular";
+    src: url("./assets/fonts/static/RedHatText-Regular.ttf");
+}
+
+@font-face {
+    font-family: "red-hat semibold";
+    src: url("./assets/fonts/static/RedHatText-SemiBold.ttf");
+}
+
+#main{
+    margin-left: 100px;
+    margin-right: 40px;
+    margin-top: 60px;
+    height: 1000px;
+    display: flex;
+}
+
+#sub1{
+    width: 700px;
+}
+
+#n1{
+    font-size: 32px;
+    font-family: "red-hat bold";
+    margin-bottom: 20px;
+}
+
+.tabs-cont{
+    display: flex;
+    flex-wrap: wrap;
+/*     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 50px; */
+/*     margin: 50px auto; */
+ /*    max-width: 1240px; */
+    width: 850px;
+    padding: 20px;
+/*     background-color: aqua; */
+    justify-content: space-between;
+}
+
+.product{
+    padding: 10px;
+    max-width: 250px;
+    max-height: 337px;
+}
+
+.img1{
+    width: 230px;
+    height: 210px;
+    border-radius: 10px;
+}
+
+.name{
+    font-family: "red-hat bold";
+    font-size: 16px;
+    /* max-width: 0px; */
+}
+
+.category{
+    font-family: "red-hat regular";
+    font-size: 16px;
+    margin-top: -10px;
+    /* max-width: 0px; */
+}
+
+.price{
+    font-family: "red-hat semibold";
+    color: hsl(14, 86%, 42%);
+    margin-bottom: 10px;
+    /* max-width: 0px; */
+}
+
+.button{
+    width: 130px;
+    height: 40px;
+    position: relative;
+    bottom: 25px;
+    left: 50px;
+    margin: 0;
+    border-radius: 18px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: "red-hat semibold";
+    font-size: 14px;
+    cursor: pointer;
+    padding-bottom: 7px;
+}
+
+.button:hover{
+    border-color: hsl(14, 86%, 42%);
+}
+
+#butimg{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px
+}
+
+#sub2{
+    margin-left: 200px;
+    width: 540px;
+    padding-top: 15px;
+    background-color: hsl(20, 50%, 98%);
+    margin-bottom: auto;
+    border-radius: 6px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#cartimg{
+    margin-left: 70px;
+    margin-top: 20px;
+    background-color: hsl(20, 50%, 98%);
+}
+
+#stxt1{
+    font-family: "red-hat bold";
+    font-size: 22px;
+    color: hsl(14, 86%, 42%);
+    background-color: hsl(20, 50%, 98%);
+}
+
+#stxt3{
+    display: flex;
+    font-family: "red-hat regular";
+    justify-content: space-between;
+    background-color: hsl(20, 50%, 98%);
+    padding-bottom: 30px
+}
+
+#sa1{
+    background-color: inherit;
+    font-family: "red-hat regular";
+    padding-top: 4px;
+}
+
+#sa2{
+    background-color: inherit;
+    font-family: "red-hat bold";
+    font-size: 20px;
+}
+
+#stxt4{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "red-hat regular";
+    margin-bottom: 20px;
+}
+
+.all-cart-items{
+    background-color: hsl(20, 50%, 98%);
+}
+
+#cn{
+    font-family: "red-hat bold";
+}
+
+#listno{
+    background-color: inherit;
+}
+
+#stxt2{
+    font-family: "red-hat regular";
+    text-align: center;
+    background-color: inherit;
+}
+
+.qty-btn{
+    width: 130px;
+    height: 40px;
+    position: relative;
+    bottom: 130px;
+    left: 50px;
+    border-radius: 18px;
+    border: none;
+    /* text-align: center; */
+    font-family: "red-hat semibold";
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 9px;
+    padding-bottom: 3px;
+    background-color: hsl(14, 86%, 42%);
+}
+
+.red-qty{
+    width: 20px;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border-color: white;
+    border: 0.3px solid;
+    border-radius: 24px;
+    height: 20px;
+    font-size: 24px;
+    line-height: 10px;
+    font-family: "red-hat variable";
+    padding-bottom: 3px;
+}
+
+.inc-qty{
+    width: 20px;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border-color: white;
+    border: 0.3px solid;
+    border-radius: 24px;
+    height: 20px;
+    font-size: 24px;
+    line-height: 19px;
+    font-family: "red-hat varisble";
+}
+
+.qty{
+    background-color: inherit;
+    color: white;
+    font-family: "red-hat variable";
+}
+
+/* .qty-btn :hover{
+    background-color: white;
+    color: hsl(14, 86%, 42%);
+    cursor: pointer;
+} */
+
+.inc-qty:hover{
+    background-color: white;
+    color: hsl(14, 86%, 42%);
+    cursor: pointer;
+}
+
+.red-qty:hover{
+    background-color: white;
+    color: hsl(14, 86%, 42%);
+    cursor: pointer;
+}
+
+span{
+    background-color: inherit;
+}
+
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(20, 50%, 98%);
+}
+
+.ct{
+    background-color: hsl(20, 50%, 98%);
+}
+
+.cta{
+    font-family: "red-hat semibold";
+    margin-bottom: 10px;
+    background-color: hsl(20, 50%, 98%);
+}
+
+.ctb{
+    font-family: "red-hat regular";
+    background-color: hsl(20, 50%, 98%);
+}
+
+.ctc{
+    color: hsl(14, 86%, 42%);  
+    margin-right: 10px; 
+    background-color: hsl(20, 50%, 98%);
+}
+
+.cart-img2{
+    background-color: hsl(20, 50%, 98%);
+/*     padding-top: 20px; */
+    border: 0.4px solid hsl(7, 20%, 60%);
+    margin-top: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding-left: 3.5px;
+}
+
+.img3{
+    background-color: hsl(20, 50%, 98%);
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: hsl(20, 50%, 98%);
+}
+
+.cart-confirmation{
+    margin-top: 30px;
+    background-color: hsl(20, 50%, 98%);
+}
+
+.cart-img2 :hover{
+    cursor: pointer;
+}
+
+.confirm-order{
+    background-color: hsl(14, 86%, 42%);
+    border: none;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-family: "red-hat regular";
+    font-size: 16px;
+    color: white;
+    border-radius: 19px;
+}
+
+.confirm-order:hover{
+    background-color: hsl(14, 65%, 9%);
+    cursor: pointer;
+}
+
+/* .modal-overlay{
+    z-index: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+} */
+
+.modal-overlay {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+
+.open-modal {
+	visibility: visible;
+}
+
+.modal-container {
+	background-color: white;
+	padding: 25px;
+	border-radius: 6px;
+	width: 450px;
+}
+
+.modal-cart-item {
+	display: flex;
+	margin: 15px 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid gray;
+    font-family: "red-hat regular";
+}
+
+.conf-item-name{
+    font-family: "red-hat semibold";
+}
+
+.modal-cart-items {
+	background-color: hsl(13, 31%, 94%);
+	border-radius: 6px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.modal-cart-item img {
+	width: 45px;
+	height: 45px;
+	margin-right: 15px;
+	border-radius: 4px;
+    background-color: white;
+}
+
+.confirm-order-title {
+	margin-bottom: 15px;
+    background-color: white;
+}
+
+.pq1{
+    color: hsl(14, 86%, 42%);
+}
+
+.pq2{
+    color: hsl(7, 20%, 60%);
+    padding-left: 15px;
+}
+
+.pq3{
+    font-family: "red-hat semibold";
+}
+
+.confirmed-cart-text {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.bi1{
+    background-color: inherit;
+    font-family: "red-hat bold";
+    font-size: 32px;
+}
+
+.bi2{
+    background-color: inherit;
+    color: hsl(7, 20%, 60%);
+    font-family: "red-hat regular";
+    font-size: 15px;
+}
+
+.bi3{
+    font-family: "red-hat regular";
+}
+
+.img4{
+    background-color: inherit;
+    width: 40px;
+    height: 40px;
+}
+
+.confirmed-cart-quantity {
+	display: flex;
+/* 	align-items: center;
+	justify-content: space-between; */
+}
+
+.confirmed-cart-price {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-total-order-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.start-new-btn {
+    background-color: hsl(14, 86%, 42%);
+	color: white;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	padding: 12px;
+	cursor: pointer;
+    font-family: "red-hat regular";
+    text-decoration: none;
+}
+
+.d1{
+    margin-top: 20px;
+    background-color: hsl(14, 86%, 42%);
+	color: white;
+	text-align: center;
+	width: 100%;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	padding: 12px;
+	cursor: pointer;
+    font-family: "red-hat regular";
+}
+
+
+
+
+
+
+
