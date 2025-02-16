@@ -64,13 +64,14 @@ document.addEventListener('DOMContentLoaded', function(){
                     const quantityValue = qtyBtn.querySelector('.qty')
                     quantity = 1
                     const img1 = document.querySelectorAll('.img1')
+                    img1[itemIndex].style.border = '2px solid hsl(14, 86%, 42%)'
                     console.log(itemIndex)
 
                     incBtn.addEventListener('click', function(){
                         quantity= quantity+1
                         quantityValue.innerHTML = quantity
                         updateCartQuantity(selectedItem, quantity)
-                        img1[itemIndex].style.border = '2px solid hsl(14, 86%, 42%)'
+                        /* img1[itemIndex].style.border = '2px solid hsl(14, 86%, 42%)' */
                     })
 
                     redBtn.addEventListener('click', function(){
